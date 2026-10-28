@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Public API Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Public API Explorer</h1>
+    <p>Fetch, search and manage posts using JavaScript</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <input id="search" type="text" placeholder="Search posts by title...">
+      <button id="loadBtn">Load Posts</button>
+    </section>
+
+    <section class="add-section">
+      <h2>Add a Post</h2>
+      <form id="postForm">
+        <input id="title" type="text" placeholder="Post title" required>
+        <textarea id="body" placeholder="Post content" required></textarea>
+        <button type="submit">Add Post</button>
+      </form>
+    </section>
+
+    <p id="status" role="status">Click Load Posts to fetch data.</p>
+    <section id="posts" class="posts"></section>
+  </main>
+
+  <footer>JavaScript API Integration Project</footer>
+  <script src="script.js"></script>
+</body>
+</html>

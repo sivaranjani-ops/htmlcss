@@ -1,0 +1,122 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+header {
+  background: #4338ca;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 0 16px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #4338ca;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #312e81;
+}
+
+.add-section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+#postForm {
+  display: grid;
+  gap: 12px;
+}
+
+#status {
+  color: #475569;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.post-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 3px 8px #0000000d;
+}
+
+.post-card h3 {
+  color: #4338ca;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
+.post-card p {
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.post-card button {
+  background: #dc2626;
+}
+
+.post-card button:hover {
+  background: #991b1b;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+}
+
+@media (max-width: 500px) {
+  .controls {
+    flex-direction: column;
+  }
+}
